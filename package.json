@@ -1,0 +1,55 @@
+{
+  "name": "import-schema",
+  "description": "Import versioned MySQL schema",
+  "version": "0.0.1",
+  "author": "Kieren BP <kieren@kieren.nz>",
+  "bin": {
+    "import-schema": "./bin/run"
+  },
+  "bugs": "https://github.com/KierenBP/import-schema/issues",
+  "dependencies": {
+    "@oclif/command": "^1.8.0",
+    "@oclif/config": "^1.17.0",
+    "@oclif/plugin-help": "^3.2.0",
+    "inquirer": "^7.3.3",
+    "listr": "^0.14.3",
+    "mysql-import": "^4.0.24",
+    "mysql2": "^2.1.0"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.22.2",
+    "eslint": "^5.16.0",
+    "eslint-config-oclif": "^3.1.0",
+    "globby": "^10.0.2"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "/src"
+  ],
+  "homepage": "https://github.com/KierenBP/import-schema",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "commands": "./src/commands",
+    "bin": "import-schema",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "KierenBP/import-schema",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "posttest": "eslint .",
+    "prepack": "oclif-dev manifest && oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}
