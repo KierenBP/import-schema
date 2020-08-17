@@ -28,26 +28,25 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`import-schema hello`](#import-schema-hello)
+* [`import-schema generate [LOCATION]`](#import-schema-generate-location)
 * [`import-schema help [COMMAND]`](#import-schema-help-command)
+* [`import-schema install [LOCATION]`](#import-schema-install-location)
+* [`import-schema update`](#import-schema-update)
 
-## `import-schema hello`
+## `import-schema generate [LOCATION]`
 
-Describe the command here
+Create schema directory
 
 ```
 USAGE
-  $ import-schema hello
-
-OPTIONS
-  -n, --name=name  name to print
+  $ import-schema generate [LOCATION]
 
 DESCRIPTION
   ...
   Extra documentation goes here
 ```
 
-_See code: [src/commands/hello.js](https://github.com/oshtrak/import-schema/blob/v0.0.1/src/commands/hello.js)_
+_See code: [src/commands/generate.js](https://github.com/KierenBP/import-schema/blob/v0.0.1/src/commands/generate.js)_
 
 ## `import-schema help [COMMAND]`
 
@@ -65,4 +64,37 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.0/src/commands/help.ts)_
+
+## `import-schema install [LOCATION]`
+
+Fresh import of entire schema
+
+```
+USAGE
+  $ import-schema install [LOCATION]
+
+DESCRIPTION
+  ...
+  Extra documentation goes here
+```
+
+_See code: [src/commands/install.js](https://github.com/KierenBP/import-schema/blob/v0.0.1/src/commands/install.js)_
+
+## `import-schema update`
+
+Update to latest schema in folder
+
+```
+USAGE
+  $ import-schema update
+
+OPTIONS
+  -n, --name=name  name to print
+
+DESCRIPTION
+  ...
+  Extra documentation goes here
+```
+
+_See code: [src/commands/update.js](https://github.com/KierenBP/import-schema/blob/v0.0.1/src/commands/update.js)_
 <!-- commandsstop -->
