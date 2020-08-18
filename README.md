@@ -19,7 +19,7 @@ $ npm install -g import-schema
 $ import-schema COMMAND
 running command...
 $ import-schema (-v|--version|version)
-import-schema/0.0.2 darwin-x64 node-v14.4.0
+import-schema/0.0.3 darwin-x64 node-v14.4.0
 $ import-schema --help [COMMAND]
 USAGE
   $ import-schema COMMAND
@@ -47,7 +47,7 @@ DESCRIPTION
   Extra documentation goes here
 ```
 
-_See code: [src/commands/generate.js](https://github.com/KierenBP/import-schema/blob/v0.0.2/src/commands/generate.js)_
+_See code: [src/commands/generate.js](https://github.com/KierenBP/import-schema/blob/v0.0.3/src/commands/generate.js)_
 
 ## `import-schema get-version`
 
@@ -62,7 +62,7 @@ DESCRIPTION
   Extra documentation goes here
 ```
 
-_See code: [src/commands/get-version.js](https://github.com/KierenBP/import-schema/blob/v0.0.2/src/commands/get-version.js)_
+_See code: [src/commands/get-version.js](https://github.com/KierenBP/import-schema/blob/v0.0.3/src/commands/get-version.js)_
 
 ## `import-schema help [COMMAND]`
 
@@ -97,7 +97,7 @@ DESCRIPTION
   Extra documentation goes here
 ```
 
-_See code: [src/commands/install.js](https://github.com/KierenBP/import-schema/blob/v0.0.2/src/commands/install.js)_
+_See code: [src/commands/install.js](https://github.com/KierenBP/import-schema/blob/v0.0.3/src/commands/install.js)_
 
 ## `import-schema update [LOCATION]`
 
@@ -115,5 +115,5 @@ DESCRIPTION
   Extra documentation goes here
 ```
 
-_See code: [src/commands/update.js](https://github.com/KierenBP/import-schema/blob/v0.0.2/src/commands/update.js)_
+_See code: [src/commands/update.js](https://github.com/KierenBP/import-schema/blob/v0.0.3/src/commands/update.js)_
 <!-- commandsstop -->

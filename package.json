@@ -1,7 +1,7 @@
 {
   "name": "import-schema",
   "description": "Import versioned MySQL schema",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Kieren BP <kieren@kieren.nz>",
   "bin": {
     "import-schema": "./bin/run"
