@@ -6,3 +6,5 @@
 /yarn.lock
 node_modules
 schema
+
+.DS_Store

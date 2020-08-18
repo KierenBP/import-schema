@@ -4,7 +4,7 @@ const Listr = require('listr');
 
 const ignoreFiles = require('./ignore-files');
 
-const dirSchema = ['structure', 'required-config.sql'];
+const dirSchema = ['structure'];
 
 let location;
 
