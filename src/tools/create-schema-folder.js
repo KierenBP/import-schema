@@ -4,7 +4,7 @@ const path = require('path');
 
 const SKIP_FILES = ['node_modules', '.template.json', '.DS_Store'];
 
-const currentTemplatePath = path.join(__dirname, '../../template');
+const currentTemplatePath = path.join(__dirname, '../template');
 
 function createProject(projectPath) {
   if (fs.existsSync(projectPath)) {
