@@ -19,7 +19,7 @@ $ npm install -g import-schema
 $ import-schema COMMAND
 running command...
 $ import-schema (-v|--version|version)
-import-schema/0.0.1 darwin-x64 node-v14.4.0
+import-schema/0.0.2 darwin-x64 node-v14.4.0
 $ import-schema --help [COMMAND]
 USAGE
   $ import-schema COMMAND
@@ -29,9 +29,10 @@ USAGE
 # Commands
 <!-- commands -->
 * [`import-schema generate [LOCATION]`](#import-schema-generate-location)
+* [`import-schema get-version`](#import-schema-get-version)
 * [`import-schema help [COMMAND]`](#import-schema-help-command)
 * [`import-schema install [LOCATION]`](#import-schema-install-location)
-* [`import-schema update`](#import-schema-update)
+* [`import-schema update [LOCATION]`](#import-schema-update-location)
 
 ## `import-schema generate [LOCATION]`
 
@@ -46,7 +47,22 @@ DESCRIPTION
   Extra documentation goes here
 ```
 
-_See code: [src/commands/generate.js](https://github.com/KierenBP/import-schema/blob/v0.0.1/src/commands/generate.js)_
+_See code: [src/commands/generate.js](https://github.com/KierenBP/import-schema/blob/v0.0.2/src/commands/generate.js)_
+
+## `import-schema get-version`
+
+Get Current Version From Database
+
+```
+USAGE
+  $ import-schema get-version
+
+DESCRIPTION
+  ...
+  Extra documentation goes here
+```
+
+_See code: [src/commands/get-version.js](https://github.com/KierenBP/import-schema/blob/v0.0.2/src/commands/get-version.js)_
 
 ## `import-schema help [COMMAND]`
 
@@ -73,28 +89,31 @@ Fresh import of entire schema
 USAGE
   $ import-schema install [LOCATION]
 
+OPTIONS
+  -v, --version=version
+
 DESCRIPTION
   ...
   Extra documentation goes here
 ```
 
-_See code: [src/commands/install.js](https://github.com/KierenBP/import-schema/blob/v0.0.1/src/commands/install.js)_
+_See code: [src/commands/install.js](https://github.com/KierenBP/import-schema/blob/v0.0.2/src/commands/install.js)_
 
-## `import-schema update`
+## `import-schema update [LOCATION]`
 
-Update to latest schema in folder
+Update schema to passed version
 
 ```
 USAGE
-  $ import-schema update
+  $ import-schema update [LOCATION]
 
 OPTIONS
-  -n, --name=name  name to print
+  -v, --version=version
 
 DESCRIPTION
   ...
   Extra documentation goes here
 ```
 
-_See code: [src/commands/update.js](https://github.com/KierenBP/import-schema/blob/v0.0.1/src/commands/update.js)_
+_See code: [src/commands/update.js](https://github.com/KierenBP/import-schema/blob/v0.0.2/src/commands/update.js)_
 <!-- commandsstop -->
