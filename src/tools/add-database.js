@@ -21,7 +21,7 @@ function getConnection(config) {
 // create the database
 function createDatabase(connection, databaseName) {
   return new Promise((resolve, reject) => {
-    return connection.query(`CREATE DATABASE IF NOT EXISTS ${databaseName}`, err => {
+    return connection.query(`CREATE DATABASE IF NOT EXISTS ${connection.escapeId(databaseName)}`, err => {
       if (err) {
         return reject(err);
       }
