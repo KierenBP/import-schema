@@ -27,7 +27,6 @@ const tasks = new Listr([
         password: serverConfig.password,
         database: serverConfig.database,
       });
-
       return importer.import(filesArr);
     },
   },
